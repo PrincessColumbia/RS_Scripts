@@ -22,6 +22,11 @@ $worksheetList | ForEach-Object {
     $masterTable += $tempTable
 }
 
+$masterTable | ForEach-Object {
+    $date = $_.'Date Ready for HTML' -as [DateTime]
+    if (!$date) { $_.'Date Ready for HTML' = $null }
+}
+
 $masterIndexFilePath = $tempDirectory + 'master-index.xlsx'
 $masterTable | Export-Excel -Path $masterIndexFilePath -WorkSheetname "Master"
 
@@ -32,7 +37,7 @@ $unassignedBuild = @()
 
 Function GrabOpenAssignments ([Int]$numToGrab) {
     if ($numToGrab -ne $null) {
-        $tempTable = $masterTable | Where-Object { $_."HTML Build Assigned" -eq $null } | Where-Object { $_."Date Ready for HTML" -ne $null } | Where-Object { $_.Waves -ne "On Hold" } | Select-Object -First $numToGrab
+        $tempTable = $masterTable | Where-Object { $_."HTML Build Assigned" -eq $null } | Where-Object { $_."Date Ready for HTML" -ne $null } | Select-Object -First $numToGrab
         $unassignedBuild += $tempTable
     } else {
         $hiPriDivs | ForEach-Object {
@@ -44,6 +49,7 @@ Function GrabOpenAssignments ([Int]$numToGrab) {
     $outputFileLocation = $tempDirectory + 'Assignments to Grab.xlsx'
     $outputTable = $unassignedBuild | Select-Object "Division_Documents","Waves","Area","Division","Lawson","SME Scrub Assigned","Date Ready for HTML"
     $outputTable | Export-Excel $outputFileLocation -WorkSheetname "Personal Tracker"
+    start $outputFileLocation
 }
 
 Function RefreshMasterTable {

@@ -2,6 +2,7 @@
 $templateFolder = $HOME + '\Scripts\Resources\Doc_Templates\'
 $defaultTemplate = $templateFolder + 'Residential_Contract_or_OM.html'
 $filesLocation = '\\repsharedfs\share\Customer Experience\Compass\CE Analyst Team Files\Site Visit Conversions\'
+$tempFileList = $HOME + '\Scripts\Temp\temp-file-list.csv'
 
 <# Create a list of the available templates #>
 $templateList = @(
@@ -106,3 +107,72 @@ Function PrepLawson ($lawson) {
     }
 }
 
+Function GetFileTypes {
+    $fileCheckList = $workTable | Where-Object { $_.Type -eq $null } | Select-Object "Document_Name" | ForEach-Object { $_."Document_Name" }
+    $fileCheckList | ForEach-Object {
+        $currentObject = $_
+        $directoryToSearch = $workTable | Where-Object { $_.Document_Name -eq $currentObject } | Select-Object -ExpandProperty "Div_Directory"
+        $filenameSearch = $currentObject + '*'
+        $searchResults = Get-ChildItem -Path $directoryToSearch -Filter $filenameSearch -Recurse
+    }
+}
+
+Function FastHTMLOpen {
+    $tempOpen = Import-Csv -Path $tempFileList
+    $tempOpen.Document_Name | ForEach-Object {
+        $currentObject = $_
+        $fileToOpen = $workTable | Where-Object { $_.Document_Name -eq $currentObject } | Select-Object -ExpandProperty "HTML_File"
+        try { start $fileToOpen }
+        catch {
+            if ( $Error[0].Exception.Message.Contains('Cannot validate argument') -eq 'True' ) {
+                Write-Host 'Cannot open the HTML file for' $currentObject
+            }
+        }
+    }
+}
+
+Function FastExcelOpen {
+    $tempOpen = Import-Csv -Path $tempFileList
+    $tempOpen.Document_Name | ForEach-Object {
+        $currentObject = $_
+        $excelTest = $currentObject.Excel_File
+        if ( $excelTest -eq "MISSING/MIS-NAMED EXCEL FILE" ) {
+            Write-Host 'Unable to open Excel file for' $currentObject
+        } else {
+            $fileToOpen = $workTable | Where-Object { $_.Document_Name -eq $currentObject } | Select-Object -ExpandProperty "Excel_File"
+            try { start $fileToOpen }
+            catch {
+                if ( $Error[0].Exception.Message.Contains('Cannot validate argument') -eq 'True' ) {
+                    Write-Host 'Unable to open Excel file for' $currentObject
+                }
+            }
+        }
+    }
+}
+
+Function DocumentOpen ($docName) {
+    $currentObject = $workTable | Where-Object { $_.Document_Name -eq $docName }
+    $excelTest = $currentObject.Excel_File
+    if ( $excelTest -eq "MISSING/MIS-NAMED EXCEL FILE" ) {
+            Write-Host 'Unable to open Excel file for' $docName
+        } else {
+            $fileToOpen = $currentObject.Excel_File
+            try { start $fileToOpen }
+            catch {
+            if ( $Error[0].Exception.Message.Contains('Cannot validate argument') -eq 'True' ) {
+                Write-Host 'Unable to open Excel file for' $currentObject
+            }
+       }
+    }
+    $fileToOpen = $currentObject.HTML_File
+    try { start $fileToOpen }
+        catch {
+        if ( $Error[0].Exception.Message.Contains('Cannot validate argument') -eq 'True' ) {
+            Write-Host 'Cannot open the HTML file for' $currentObject
+        }
+    }
+}
+
+Function SeeDetails ($docName) {
+    $workTable | Where-Object { $_.Document_Name -eq $docName }
+}
