@@ -18,6 +18,7 @@ Function RefreshMenu {
 }
 #>
 
+
 Function CreateNav {
     Write-Host -ForegroundColor Yellow -BackgroundColor Red ====================================================================================
     $menuBuild | Select-Object "Menu Builder", "Menu Div ID" -Unique | ForEach-Object {
@@ -140,6 +141,7 @@ Function TablesBuilder {
         </div>'
         $newTable = $tablePart1 + $tableDivID + $tablePart2 + $anchorName + $tablePart3 + $tableCaption + $tablePart4
         Add-Content -Value $newTable -Path $appendPath
+        start $appendPath
     }
 }
 

@@ -4,6 +4,8 @@ $defaultTemplate = $templateFolder + 'Residential_Contract_or_OM.html'
 $filesLocation = '\\repsharedfs\share\Customer Experience\Compass\CE Analyst Team Files\Site Visit Conversions\'
 $tempFileList = $HOME + '\Scripts\Temp\temp-file-list.csv'
 
+Add-Type -assembly System.IO.Compression.FileSystem
+
 <# Create a list of the available templates #>
 $templateList = @(
 "Billing_and_Collection_Information",
@@ -25,10 +27,12 @@ $templateList = @(
 
 $workTable = Import-Excel -Path $workingFile -WorkSheetname 'Master'
 
+$workTable | Add-Member -MemberType NoteProperty -Name "Current_Location" -Value $null
 $workTable | Add-Member -MemberType NoteProperty -Name "Excel_File" -Value $null
 $workTable | Add-Member -MemberType NoteProperty -Name "HTML_File" -Value $null
 $workTable | Add-Member -MemberType NoteProperty -Name "DIV_Directory" -Value $null
 $workTable | Add-Member -MemberType NoteProperty -Name "HTML_Destination" -Value $null
+$workTable | Add-Member -MemberType NoteProperty -Name "Built_Destination" -Value $null
 $workTable | Add-Member -MemberType NoteProperty -Name "Excel_Destination" -Value $null
 $workTable | Add-Member -MemberType NoteProperty -Name "Error" -Value $null
 
@@ -71,6 +75,13 @@ $workTable | ForEach-Object {
             $currentObject.Excel_File = 'MISSING/MIS-NAMED EXCEL FILE'
         }
     }
+    $pdfFileVerbose = $fileSearchResults | Where-Object { [System.IO.Path]::GetExtension($_) -eq '.pdf' }
+    $pdfFile = $pdfFileVerbose.FullName
+    if ( $excelFile -eq $null ) {
+        $currentObject.Current_Location = $pdfFile
+    } else {
+        $currentObject.Current_Location = $excelFile
+    }
     $currentObject.DIV_Directory = $divSearchDirectory
     $htmlDirectoryPath = $divSearchDirectory + '3 - Peer Review\'
     $htmlDirectoryPathTest = Test-Path $htmlDirectoryPath
@@ -85,24 +96,32 @@ $workTable | ForEach-Object {
     $excelMoveAfterBuildPathTest = Test-Path $excelMoveAfterBuildPath
     $excelMoveFile = $excelMoveAfterBuildPath + $currentObject.Document_Name + '.xlsx'
     if ($excelMoveAfterBuildPathTest -eq 'Yes') {
+        $currentObject.Built_Destination = $excelMoveAfterBuildPath
         $currentObject.Excel_Destination = $excelMoveFile
     } else {
         New-Item $excelMoveAfterBuildPath -ItemType Directory
+        $currentObject.Built_Destination = $excelMoveAfterBuildPath
         $currentObject.Excel_Destination = $excelMoveFile
     }
     if ( $currentObject.Type -eq 'PDF' ) {
         $currentObject.Excel_File = 'N/A'
-        $currentObject.DIV_Directory = 'N/A'
-        $currentObject.HTML_Destination = 'N/A'
+        $currentObject.HTML_File = 'N/A'
         $currentObject.Excel_Destination = 'N/A'
     }
 }
 
 Function PrepLawson ($lawson) {
-    $workTable | Where-Object { $_.Lawson -eq $lawson } | Where-Object { $_.Type -eq 'HTML' } | Where-Object { $_.Excel_File -ne 'MISSING/MIS-NAMED EXCEL FILE' } | ForEach-Object {
-        start $_.Excel_File
-        $templateToUse = $templateFolder + $_.Template + '.html'
-        Copy-Item $templateToUse $_.HTML_File
+    $workTable | Where-Object { $_.Lawson -eq $lawson } | Where-Object { $_.Type -eq 'HTML' } | Where-Object { $_.Excel_File -ne 'MISSING/MIS-NAMED EXCEL FILE' } | Where-Object { $_."Document Built" -eq 'Incomplete' } | ForEach-Object {
+        $currentObject = $_
+        start $currentObject.Excel_File
+        $templateToUse = $templateFolder + $currentObject.Template + '.html'
+        $fileLocationPath = $currentObject.HTML_File
+        $fileExistsTest = Test-Path $fileLocationPath
+        if ( $fileExistsTest -ne 'True' ) {
+            Copy-Item $templateToUse $currentObject.HTML_File
+            $file = Get-Item $currentObject.HTML_File
+            $file.LastWriteTime = (Get-Date)
+        }
         start $_.HTML_File
     }
 }
@@ -124,7 +143,7 @@ Function FastHTMLOpen {
         $fileToOpen = $workTable | Where-Object { $_.Document_Name -eq $currentObject } | Select-Object -ExpandProperty "HTML_File"
         try { start $fileToOpen }
         catch {
-            if ( $Error[0].Exception.Message.Contains('Cannot validate argument') -eq 'True' ) {
+            if ( $Error[0].Exception.Message.Contains('Cannot validate argument') -or $Error[0].Exception.Message.Contains('cannot find the file') ) {
                 Write-Host 'Cannot open the HTML file for' $currentObject
             }
         }
@@ -170,9 +189,41 @@ Function DocumentOpen ($docName) {
         if ( $Error[0].Exception.Message.Contains('Cannot validate argument') -eq 'True' ) {
             Write-Host 'Cannot open the HTML file for' $currentObject
         }
-    }
+    }d
 }
 
 Function SeeDetails ($docName) {
     $workTable | Where-Object { $_.Document_Name -eq $docName }
+}
+
+Function CreateHTMLFile ($docName) {
+    $workTable | Where-Object { $_.Document_Name -eq $docName } | ForEach-Object {
+        $currentObject = $_
+        $templateToUse = $templateFolder + $currentObject.Template + '.html'
+        $fileLocationPath = $currentObject.HTML_File
+        $fileExistsTest = Test-Path $fileLocationPath
+        if ( $fileExistsTest -ne 'True' ) {
+            Copy-Item $templateToUse $currentObject.HTML_File
+        }
+        start $currentObject.HTML_File
+    }
+}
+
+Function CopyPDFs {
+    $workTable | Where-Object { $_."Date ready for Peer Review" -eq $null -and $_.Type -eq 'PDF' } | Where-Object { $_."Feedback Needed" -eq $null } | ForEach-Object {
+        $currentObject = $_
+        $currentFileName = $currentObject.Document_Name + '.pdf'
+        $targetDirectoryBuilt = 
+        if ( $currentObject.HTML_Destination -eq 'N/A' -or $currentObject.Current_Location -eq $null ) {
+            Write-Host 'Unable to move' $currentFileName -BackgroundColor Red -ForegroundColor Yellow
+        } else {
+            Copy-Item $currentObject.Current_Location $currentObject.HTML_Destination
+            Move-Item $currentObject.Current_Location $currentObject.Built_Destination
+        }
+    }
+}
+
+Function ChangeToLawsonDirectory ($lawNum) {
+    $targetDir = ($workTable | Where-Object { $_.Lawson -eq $lawNum })[0].DIV_Directory
+    cd $targetDir
 }

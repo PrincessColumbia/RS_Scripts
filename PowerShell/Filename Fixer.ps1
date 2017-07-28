@@ -1,6 +1,4 @@
-﻿$folderList = Get-ChildItem -Directory -Recurse
-
-Function FixBadFilename ($badChar,$repChars) {
+﻿Function FixBadFilename ($badChar,$repChars) {
     if ($repChars -eq $null) {
         $repChars = "_"
     }

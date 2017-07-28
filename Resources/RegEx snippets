@@ -1,0 +1,30 @@
+Blank row (three total columns):
+(\s+<tr>\s+<td.+>.+<\/td>\s+<td>.+<\/td>\s+<td>.+<\/td>\s+<\/tr>)
+
+Link to top of page:
+<p><a href="#Top">Back to top</a></p>
+
+Table cap and new table with link to top of page:
+</tbody>\r</table>\r<p><a href="#Top">Back to top</a></p>\r<table>\r<thead>
+
+Table starter:
+</thead><tbody>
+
+End of table search:
+(<tr>\s+<td\s+width="\d\d\%"\s+class="tablelabels2">Acceptable/Non-Acceptable\s+Items\s+<br>\s+\&amp\;\s+Preparation\s+List<\/td>\s+<td>.+<\/td>\s+<td>.+<\/td>\s+<\/tr>)
+
+
+Section start:
+(\s+<tr)
+
+(>\s+<td)
+
+(\s+width="\d\d\%"\s+class="tablelabels2")
+
+(>                <\/td>\s+<td>.+<\/td>\s+<td>.+<\/td>\s+<\/tr>)
+
+Substitution string for most queries:
+$1</tbody>\r</table>\r<p><a href="#Top">Back to top</a></p>\r<table>\r<thead>$3 class="tableheader"$4$6</thead><tbody>
+
+Add a cell:
+<td>.+<\/td>\s+
