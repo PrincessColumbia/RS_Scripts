@@ -141,8 +141,8 @@ Function TablesBuilder {
         </div>'
         $newTable = $tablePart1 + $tableDivID + $tablePart2 + $anchorName + $tablePart3 + $tableCaption + $tablePart4
         Add-Content -Value $newTable -Path $appendPath
-        start $appendPath
     }
+    start $appendPath
 }
 
 Function RefreshMenuTable {

@@ -68,6 +68,76 @@
           </table>
           <p><a href="#Top">Back to top</a></p>
         </div>
+<div id="SW-Cart-64gal"><a name="SWCart64gal"></a>
+          <table width="100%" border="1" cellpadding="2" cellspacing="2" class="tabletext">
+            <colgroup>
+            <col>
+            </colgroup>
+            <colgroup>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            </colgroup>
+            <thead>
+              <tr class="tableheader">
+                <th colspan="11" scope="col">64 gal Cart Pricing - Solid Waste</th>
+              </tr>
+              <tr class="tablelabels">
+                <th scope="col">&nbsp;</th>
+                <th width="8%" scope="col">1 pick up per week</th>
+                <th width="8%" scope="col">2 pick ups per week</th>
+                <th width="8%" scope="col">3 pick ups per week</th>
+                <th width="8%" scope="col">4 pick ups per week</th>
+                <th width="8%" scope="col">5 pick ups per week</th>
+                <th width="8%" scope="col">6 pick ups per week</th>
+                <th width="8%" scope="col">7 pick ups per week</th>
+                <th width="8%" scope="col">On Call</th>
+                <th width="8%" scope="col">Every other week</th>
+                <th scope="col">1 pick up per month</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th width="21%" class="tablelabels2" scope="row" data-section="row-header">A - List Price</th>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <th width="21%" class="tablelabels2" scope="row" data-section="row-header">A - List Price (2nd container)</th>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <th width="21%" class="tablelabels2" scope="row" data-section="row-header">Notes</th>
+                <td colspan="10">&nbsp;</td>
+              </tr>
+            </tbody>
+          </table>
+          <p><a href="#Top">Back to top</a></p>
+        </div>
 <div id="SW-Cart-96gal"><a name="SWCart96gal"></a>
           <table width="100%" border="1" cellpadding="2" cellspacing="2" class="tabletext">
             <colgroup>
@@ -138,7 +208,7 @@
           </table>
           <p><a href="#Top">Back to top</a></p>
         </div>
-<div id="REC-Cart-32gal"><a name="RECCart32gal"></a>
+<div id="SW-FrontLoad-1yd"><a name="SWFrontLoad1yd"></a>
           <table width="100%" border="1" cellpadding="2" cellspacing="2" class="tabletext">
             <colgroup>
             <col>
@@ -157,7 +227,7 @@
             </colgroup>
             <thead>
               <tr class="tableheader">
-                <th colspan="11" scope="col">32 gal Cart Pricing - Recycle</th>
+                <th colspan="11" scope="col">1 yd Front Load Pricing - Solid Waste</th>
               </tr>
               <tr class="tablelabels">
                 <th scope="col">&nbsp;</th>
@@ -208,7 +278,7 @@
           </table>
           <p><a href="#Top">Back to top</a></p>
         </div>
-<div id="REC-Cart-96gal"><a name="RECCart96gal"></a>
+<div id="SW-FrontLoad-1.5yd"><a name="SWFrontLoad1.5yd"></a>
           <table width="100%" border="1" cellpadding="2" cellspacing="2" class="tabletext">
             <colgroup>
             <col>
@@ -227,7 +297,7 @@
             </colgroup>
             <thead>
               <tr class="tableheader">
-                <th colspan="11" scope="col">96 gal Cart Pricing - Recycle</th>
+                <th colspan="11" scope="col">1.5 yd Front Load Pricing - Solid Waste</th>
               </tr>
               <tr class="tablelabels">
                 <th scope="col">&nbsp;</th>
@@ -278,7 +348,7 @@
           </table>
           <p><a href="#Top">Back to top</a></p>
         </div>
-<div id="FW-Cart-96gal"><a name="FWCart96gal"></a>
+<div id="SW-FrontLoad-2yd"><a name="SWFrontLoad2yd"></a>
           <table width="100%" border="1" cellpadding="2" cellspacing="2" class="tabletext">
             <colgroup>
             <col>
@@ -297,7 +367,7 @@
             </colgroup>
             <thead>
               <tr class="tableheader">
-                <th colspan="11" scope="col">96 gal Cart Pricing - Food Waste</th>
+                <th colspan="11" scope="col">2 yd Front Load Pricing - Solid Waste</th>
               </tr>
               <tr class="tablelabels">
                 <th scope="col">&nbsp;</th>
@@ -348,7 +418,7 @@
           </table>
           <p><a href="#Top">Back to top</a></p>
         </div>
-<div id="FW-Cart-96gal"><a name="FWCart96gal"></a>
+<div id="SW-FrontLoad-3yd"><a name="SWFrontLoad3yd"></a>
           <table width="100%" border="1" cellpadding="2" cellspacing="2" class="tabletext">
             <colgroup>
             <col>
@@ -367,7 +437,1057 @@
             </colgroup>
             <thead>
               <tr class="tableheader">
-                <th colspan="11" scope="col">96 gal Cart Pricing - Food Waste</th>
+                <th colspan="11" scope="col">3 yd Front Load Pricing - Solid Waste</th>
+              </tr>
+              <tr class="tablelabels">
+                <th scope="col">&nbsp;</th>
+                <th width="8%" scope="col">1 pick up per week</th>
+                <th width="8%" scope="col">2 pick ups per week</th>
+                <th width="8%" scope="col">3 pick ups per week</th>
+                <th width="8%" scope="col">4 pick ups per week</th>
+                <th width="8%" scope="col">5 pick ups per week</th>
+                <th width="8%" scope="col">6 pick ups per week</th>
+                <th width="8%" scope="col">7 pick ups per week</th>
+                <th width="8%" scope="col">On Call</th>
+                <th width="8%" scope="col">Every other week</th>
+                <th scope="col">1 pick up per month</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th width="21%" class="tablelabels2" scope="row" data-section="row-header">A - List Price</th>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <th width="21%" class="tablelabels2" scope="row" data-section="row-header">A - List Price (2nd container)</th>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <th width="21%" class="tablelabels2" scope="row" data-section="row-header">Notes</th>
+                <td colspan="10">&nbsp;</td>
+              </tr>
+            </tbody>
+          </table>
+          <p><a href="#Top">Back to top</a></p>
+        </div>
+<div id="SW-FrontLoad-4yd"><a name="SWFrontLoad4yd"></a>
+          <table width="100%" border="1" cellpadding="2" cellspacing="2" class="tabletext">
+            <colgroup>
+            <col>
+            </colgroup>
+            <colgroup>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            </colgroup>
+            <thead>
+              <tr class="tableheader">
+                <th colspan="11" scope="col">4 yd Front Load Pricing - Solid Waste</th>
+              </tr>
+              <tr class="tablelabels">
+                <th scope="col">&nbsp;</th>
+                <th width="8%" scope="col">1 pick up per week</th>
+                <th width="8%" scope="col">2 pick ups per week</th>
+                <th width="8%" scope="col">3 pick ups per week</th>
+                <th width="8%" scope="col">4 pick ups per week</th>
+                <th width="8%" scope="col">5 pick ups per week</th>
+                <th width="8%" scope="col">6 pick ups per week</th>
+                <th width="8%" scope="col">7 pick ups per week</th>
+                <th width="8%" scope="col">On Call</th>
+                <th width="8%" scope="col">Every other week</th>
+                <th scope="col">1 pick up per month</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th width="21%" class="tablelabels2" scope="row" data-section="row-header">A - List Price</th>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <th width="21%" class="tablelabels2" scope="row" data-section="row-header">A - List Price (2nd container)</th>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <th width="21%" class="tablelabels2" scope="row" data-section="row-header">Notes</th>
+                <td colspan="10">&nbsp;</td>
+              </tr>
+            </tbody>
+          </table>
+          <p><a href="#Top">Back to top</a></p>
+        </div>
+<div id="SW-FrontLoad-6yd"><a name="SWFrontLoad6yd"></a>
+          <table width="100%" border="1" cellpadding="2" cellspacing="2" class="tabletext">
+            <colgroup>
+            <col>
+            </colgroup>
+            <colgroup>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            </colgroup>
+            <thead>
+              <tr class="tableheader">
+                <th colspan="11" scope="col">6 yd Front Load Pricing - Solid Waste</th>
+              </tr>
+              <tr class="tablelabels">
+                <th scope="col">&nbsp;</th>
+                <th width="8%" scope="col">1 pick up per week</th>
+                <th width="8%" scope="col">2 pick ups per week</th>
+                <th width="8%" scope="col">3 pick ups per week</th>
+                <th width="8%" scope="col">4 pick ups per week</th>
+                <th width="8%" scope="col">5 pick ups per week</th>
+                <th width="8%" scope="col">6 pick ups per week</th>
+                <th width="8%" scope="col">7 pick ups per week</th>
+                <th width="8%" scope="col">On Call</th>
+                <th width="8%" scope="col">Every other week</th>
+                <th scope="col">1 pick up per month</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th width="21%" class="tablelabels2" scope="row" data-section="row-header">A - List Price</th>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <th width="21%" class="tablelabels2" scope="row" data-section="row-header">A - List Price (2nd container)</th>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <th width="21%" class="tablelabels2" scope="row" data-section="row-header">Notes</th>
+                <td colspan="10">&nbsp;</td>
+              </tr>
+            </tbody>
+          </table>
+          <p><a href="#Top">Back to top</a></p>
+        </div>
+<div id="SW-FrontLoad-8yd"><a name="SWFrontLoad8yd"></a>
+          <table width="100%" border="1" cellpadding="2" cellspacing="2" class="tabletext">
+            <colgroup>
+            <col>
+            </colgroup>
+            <colgroup>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            </colgroup>
+            <thead>
+              <tr class="tableheader">
+                <th colspan="11" scope="col">8 yd Front Load Pricing - Solid Waste</th>
+              </tr>
+              <tr class="tablelabels">
+                <th scope="col">&nbsp;</th>
+                <th width="8%" scope="col">1 pick up per week</th>
+                <th width="8%" scope="col">2 pick ups per week</th>
+                <th width="8%" scope="col">3 pick ups per week</th>
+                <th width="8%" scope="col">4 pick ups per week</th>
+                <th width="8%" scope="col">5 pick ups per week</th>
+                <th width="8%" scope="col">6 pick ups per week</th>
+                <th width="8%" scope="col">7 pick ups per week</th>
+                <th width="8%" scope="col">On Call</th>
+                <th width="8%" scope="col">Every other week</th>
+                <th scope="col">1 pick up per month</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th width="21%" class="tablelabels2" scope="row" data-section="row-header">A - List Price</th>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <th width="21%" class="tablelabels2" scope="row" data-section="row-header">A - List Price (2nd container)</th>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <th width="21%" class="tablelabels2" scope="row" data-section="row-header">Notes</th>
+                <td colspan="10">&nbsp;</td>
+              </tr>
+            </tbody>
+          </table>
+          <p><a href="#Top">Back to top</a></p>
+        </div>
+<div id="REC-FrontLoad-1yd"><a name="RECFrontLoad1yd"></a>
+          <table width="100%" border="1" cellpadding="2" cellspacing="2" class="tabletext">
+            <colgroup>
+            <col>
+            </colgroup>
+            <colgroup>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            </colgroup>
+            <thead>
+              <tr class="tableheader">
+                <th colspan="11" scope="col">1 yd Front Load Pricing - Recycle</th>
+              </tr>
+              <tr class="tablelabels">
+                <th scope="col">&nbsp;</th>
+                <th width="8%" scope="col">1 pick up per week</th>
+                <th width="8%" scope="col">2 pick ups per week</th>
+                <th width="8%" scope="col">3 pick ups per week</th>
+                <th width="8%" scope="col">4 pick ups per week</th>
+                <th width="8%" scope="col">5 pick ups per week</th>
+                <th width="8%" scope="col">6 pick ups per week</th>
+                <th width="8%" scope="col">7 pick ups per week</th>
+                <th width="8%" scope="col">On Call</th>
+                <th width="8%" scope="col">Every other week</th>
+                <th scope="col">1 pick up per month</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th width="21%" class="tablelabels2" scope="row" data-section="row-header">A - List Price</th>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <th width="21%" class="tablelabels2" scope="row" data-section="row-header">A - List Price (2nd container)</th>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <th width="21%" class="tablelabels2" scope="row" data-section="row-header">Notes</th>
+                <td colspan="10">&nbsp;</td>
+              </tr>
+            </tbody>
+          </table>
+          <p><a href="#Top">Back to top</a></p>
+        </div>
+<div id="REC-FrontLoad-2yd"><a name="RECFrontLoad2yd"></a>
+          <table width="100%" border="1" cellpadding="2" cellspacing="2" class="tabletext">
+            <colgroup>
+            <col>
+            </colgroup>
+            <colgroup>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            </colgroup>
+            <thead>
+              <tr class="tableheader">
+                <th colspan="11" scope="col">2 yd Front Load Pricing - Recycle</th>
+              </tr>
+              <tr class="tablelabels">
+                <th scope="col">&nbsp;</th>
+                <th width="8%" scope="col">1 pick up per week</th>
+                <th width="8%" scope="col">2 pick ups per week</th>
+                <th width="8%" scope="col">3 pick ups per week</th>
+                <th width="8%" scope="col">4 pick ups per week</th>
+                <th width="8%" scope="col">5 pick ups per week</th>
+                <th width="8%" scope="col">6 pick ups per week</th>
+                <th width="8%" scope="col">7 pick ups per week</th>
+                <th width="8%" scope="col">On Call</th>
+                <th width="8%" scope="col">Every other week</th>
+                <th scope="col">1 pick up per month</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th width="21%" class="tablelabels2" scope="row" data-section="row-header">A - List Price</th>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <th width="21%" class="tablelabels2" scope="row" data-section="row-header">A - List Price (2nd container)</th>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <th width="21%" class="tablelabels2" scope="row" data-section="row-header">Notes</th>
+                <td colspan="10">&nbsp;</td>
+              </tr>
+            </tbody>
+          </table>
+          <p><a href="#Top">Back to top</a></p>
+        </div>
+<div id="REC-FrontLoad-4yd"><a name="RECFrontLoad4yd"></a>
+          <table width="100%" border="1" cellpadding="2" cellspacing="2" class="tabletext">
+            <colgroup>
+            <col>
+            </colgroup>
+            <colgroup>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            </colgroup>
+            <thead>
+              <tr class="tableheader">
+                <th colspan="11" scope="col">4 yd Front Load Pricing - Recycle</th>
+              </tr>
+              <tr class="tablelabels">
+                <th scope="col">&nbsp;</th>
+                <th width="8%" scope="col">1 pick up per week</th>
+                <th width="8%" scope="col">2 pick ups per week</th>
+                <th width="8%" scope="col">3 pick ups per week</th>
+                <th width="8%" scope="col">4 pick ups per week</th>
+                <th width="8%" scope="col">5 pick ups per week</th>
+                <th width="8%" scope="col">6 pick ups per week</th>
+                <th width="8%" scope="col">7 pick ups per week</th>
+                <th width="8%" scope="col">On Call</th>
+                <th width="8%" scope="col">Every other week</th>
+                <th scope="col">1 pick up per month</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th width="21%" class="tablelabels2" scope="row" data-section="row-header">A - List Price</th>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <th width="21%" class="tablelabels2" scope="row" data-section="row-header">A - List Price (2nd container)</th>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <th width="21%" class="tablelabels2" scope="row" data-section="row-header">Notes</th>
+                <td colspan="10">&nbsp;</td>
+              </tr>
+            </tbody>
+          </table>
+          <p><a href="#Top">Back to top</a></p>
+        </div>
+<div id="REC-FrontLoad-6yd"><a name="RECFrontLoad6yd"></a>
+          <table width="100%" border="1" cellpadding="2" cellspacing="2" class="tabletext">
+            <colgroup>
+            <col>
+            </colgroup>
+            <colgroup>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            </colgroup>
+            <thead>
+              <tr class="tableheader">
+                <th colspan="11" scope="col">6 yd Front Load Pricing - Recycle</th>
+              </tr>
+              <tr class="tablelabels">
+                <th scope="col">&nbsp;</th>
+                <th width="8%" scope="col">1 pick up per week</th>
+                <th width="8%" scope="col">2 pick ups per week</th>
+                <th width="8%" scope="col">3 pick ups per week</th>
+                <th width="8%" scope="col">4 pick ups per week</th>
+                <th width="8%" scope="col">5 pick ups per week</th>
+                <th width="8%" scope="col">6 pick ups per week</th>
+                <th width="8%" scope="col">7 pick ups per week</th>
+                <th width="8%" scope="col">On Call</th>
+                <th width="8%" scope="col">Every other week</th>
+                <th scope="col">1 pick up per month</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th width="21%" class="tablelabels2" scope="row" data-section="row-header">A - List Price</th>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <th width="21%" class="tablelabels2" scope="row" data-section="row-header">A - List Price (2nd container)</th>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <th width="21%" class="tablelabels2" scope="row" data-section="row-header">Notes</th>
+                <td colspan="10">&nbsp;</td>
+              </tr>
+            </tbody>
+          </table>
+          <p><a href="#Top">Back to top</a></p>
+        </div>
+<div id="REC-FrontLoad-8yd"><a name="RECFrontLoad8yd"></a>
+          <table width="100%" border="1" cellpadding="2" cellspacing="2" class="tabletext">
+            <colgroup>
+            <col>
+            </colgroup>
+            <colgroup>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            </colgroup>
+            <thead>
+              <tr class="tableheader">
+                <th colspan="11" scope="col">8 yd Front Load Pricing - Recycle</th>
+              </tr>
+              <tr class="tablelabels">
+                <th scope="col">&nbsp;</th>
+                <th width="8%" scope="col">1 pick up per week</th>
+                <th width="8%" scope="col">2 pick ups per week</th>
+                <th width="8%" scope="col">3 pick ups per week</th>
+                <th width="8%" scope="col">4 pick ups per week</th>
+                <th width="8%" scope="col">5 pick ups per week</th>
+                <th width="8%" scope="col">6 pick ups per week</th>
+                <th width="8%" scope="col">7 pick ups per week</th>
+                <th width="8%" scope="col">On Call</th>
+                <th width="8%" scope="col">Every other week</th>
+                <th scope="col">1 pick up per month</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th width="21%" class="tablelabels2" scope="row" data-section="row-header">A - List Price</th>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <th width="21%" class="tablelabels2" scope="row" data-section="row-header">A - List Price (2nd container)</th>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <th width="21%" class="tablelabels2" scope="row" data-section="row-header">Notes</th>
+                <td colspan="10">&nbsp;</td>
+              </tr>
+            </tbody>
+          </table>
+          <p><a href="#Top">Back to top</a></p>
+        </div>
+<div id="Org-Cart-32gal"><a name="OrgCart32gal"></a>
+          <table width="100%" border="1" cellpadding="2" cellspacing="2" class="tabletext">
+            <colgroup>
+            <col>
+            </colgroup>
+            <colgroup>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            </colgroup>
+            <thead>
+              <tr class="tableheader">
+                <th colspan="11" scope="col">32 gal Cart Pricing - Organic Waste</th>
+              </tr>
+              <tr class="tablelabels">
+                <th scope="col">&nbsp;</th>
+                <th width="8%" scope="col">1 pick up per week</th>
+                <th width="8%" scope="col">2 pick ups per week</th>
+                <th width="8%" scope="col">3 pick ups per week</th>
+                <th width="8%" scope="col">4 pick ups per week</th>
+                <th width="8%" scope="col">5 pick ups per week</th>
+                <th width="8%" scope="col">6 pick ups per week</th>
+                <th width="8%" scope="col">7 pick ups per week</th>
+                <th width="8%" scope="col">On Call</th>
+                <th width="8%" scope="col">Every other week</th>
+                <th scope="col">1 pick up per month</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th width="21%" class="tablelabels2" scope="row" data-section="row-header">A - List Price</th>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <th width="21%" class="tablelabels2" scope="row" data-section="row-header">A - List Price (2nd container)</th>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <th width="21%" class="tablelabels2" scope="row" data-section="row-header">Notes</th>
+                <td colspan="10">&nbsp;</td>
+              </tr>
+            </tbody>
+          </table>
+          <p><a href="#Top">Back to top</a></p>
+        </div>
+<div id="Org-Cart-64gal"><a name="OrgCart64gal"></a>
+          <table width="100%" border="1" cellpadding="2" cellspacing="2" class="tabletext">
+            <colgroup>
+            <col>
+            </colgroup>
+            <colgroup>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            </colgroup>
+            <thead>
+              <tr class="tableheader">
+                <th colspan="11" scope="col">64 gal Cart Pricing - Organic Waste</th>
+              </tr>
+              <tr class="tablelabels">
+                <th scope="col">&nbsp;</th>
+                <th width="8%" scope="col">1 pick up per week</th>
+                <th width="8%" scope="col">2 pick ups per week</th>
+                <th width="8%" scope="col">3 pick ups per week</th>
+                <th width="8%" scope="col">4 pick ups per week</th>
+                <th width="8%" scope="col">5 pick ups per week</th>
+                <th width="8%" scope="col">6 pick ups per week</th>
+                <th width="8%" scope="col">7 pick ups per week</th>
+                <th width="8%" scope="col">On Call</th>
+                <th width="8%" scope="col">Every other week</th>
+                <th scope="col">1 pick up per month</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th width="21%" class="tablelabels2" scope="row" data-section="row-header">A - List Price</th>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <th width="21%" class="tablelabels2" scope="row" data-section="row-header">A - List Price (2nd container)</th>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <th width="21%" class="tablelabels2" scope="row" data-section="row-header">Notes</th>
+                <td colspan="10">&nbsp;</td>
+              </tr>
+            </tbody>
+          </table>
+          <p><a href="#Top">Back to top</a></p>
+        </div>
+<div id="Org-Cart-96gal"><a name="OrgCart96gal"></a>
+          <table width="100%" border="1" cellpadding="2" cellspacing="2" class="tabletext">
+            <colgroup>
+            <col>
+            </colgroup>
+            <colgroup>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            </colgroup>
+            <thead>
+              <tr class="tableheader">
+                <th colspan="11" scope="col">96 gal Cart Pricing - Organic Waste</th>
+              </tr>
+              <tr class="tablelabels">
+                <th scope="col">&nbsp;</th>
+                <th width="8%" scope="col">1 pick up per week</th>
+                <th width="8%" scope="col">2 pick ups per week</th>
+                <th width="8%" scope="col">3 pick ups per week</th>
+                <th width="8%" scope="col">4 pick ups per week</th>
+                <th width="8%" scope="col">5 pick ups per week</th>
+                <th width="8%" scope="col">6 pick ups per week</th>
+                <th width="8%" scope="col">7 pick ups per week</th>
+                <th width="8%" scope="col">On Call</th>
+                <th width="8%" scope="col">Every other week</th>
+                <th scope="col">1 pick up per month</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th width="21%" class="tablelabels2" scope="row" data-section="row-header">A - List Price</th>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <th width="21%" class="tablelabels2" scope="row" data-section="row-header">A - List Price (2nd container)</th>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <th width="21%" class="tablelabels2" scope="row" data-section="row-header">Notes</th>
+                <td colspan="10">&nbsp;</td>
+              </tr>
+            </tbody>
+          </table>
+          <p><a href="#Top">Back to top</a></p>
+        </div>
+<div id="Org-FrontLoad-1yd"><a name="OrgFrontLoad1yd"></a>
+          <table width="100%" border="1" cellpadding="2" cellspacing="2" class="tabletext">
+            <colgroup>
+            <col>
+            </colgroup>
+            <colgroup>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            </colgroup>
+            <thead>
+              <tr class="tableheader">
+                <th colspan="11" scope="col">1 yd Front Load Pricing - Organic Waste</th>
+              </tr>
+              <tr class="tablelabels">
+                <th scope="col">&nbsp;</th>
+                <th width="8%" scope="col">1 pick up per week</th>
+                <th width="8%" scope="col">2 pick ups per week</th>
+                <th width="8%" scope="col">3 pick ups per week</th>
+                <th width="8%" scope="col">4 pick ups per week</th>
+                <th width="8%" scope="col">5 pick ups per week</th>
+                <th width="8%" scope="col">6 pick ups per week</th>
+                <th width="8%" scope="col">7 pick ups per week</th>
+                <th width="8%" scope="col">On Call</th>
+                <th width="8%" scope="col">Every other week</th>
+                <th scope="col">1 pick up per month</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th width="21%" class="tablelabels2" scope="row" data-section="row-header">A - List Price</th>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <th width="21%" class="tablelabels2" scope="row" data-section="row-header">A - List Price (2nd container)</th>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <th width="21%" class="tablelabels2" scope="row" data-section="row-header">Notes</th>
+                <td colspan="10">&nbsp;</td>
+              </tr>
+            </tbody>
+          </table>
+          <p><a href="#Top">Back to top</a></p>
+        </div>
+<div id="Org-FrontLoad-1.5yd"><a name="OrgFrontLoad1.5yd"></a>
+          <table width="100%" border="1" cellpadding="2" cellspacing="2" class="tabletext">
+            <colgroup>
+            <col>
+            </colgroup>
+            <colgroup>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            </colgroup>
+            <thead>
+              <tr class="tableheader">
+                <th colspan="11" scope="col">1.5 yd Front Load Pricing - Organic Waste</th>
+              </tr>
+              <tr class="tablelabels">
+                <th scope="col">&nbsp;</th>
+                <th width="8%" scope="col">1 pick up per week</th>
+                <th width="8%" scope="col">2 pick ups per week</th>
+                <th width="8%" scope="col">3 pick ups per week</th>
+                <th width="8%" scope="col">4 pick ups per week</th>
+                <th width="8%" scope="col">5 pick ups per week</th>
+                <th width="8%" scope="col">6 pick ups per week</th>
+                <th width="8%" scope="col">7 pick ups per week</th>
+                <th width="8%" scope="col">On Call</th>
+                <th width="8%" scope="col">Every other week</th>
+                <th scope="col">1 pick up per month</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th width="21%" class="tablelabels2" scope="row" data-section="row-header">A - List Price</th>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <th width="21%" class="tablelabels2" scope="row" data-section="row-header">A - List Price (2nd container)</th>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <th width="21%" class="tablelabels2" scope="row" data-section="row-header">Notes</th>
+                <td colspan="10">&nbsp;</td>
+              </tr>
+            </tbody>
+          </table>
+          <p><a href="#Top">Back to top</a></p>
+        </div>
+<div id="Org-FrontLoad-2yd"><a name="OrgFrontLoad2yd"></a>
+          <table width="100%" border="1" cellpadding="2" cellspacing="2" class="tabletext">
+            <colgroup>
+            <col>
+            </colgroup>
+            <colgroup>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            </colgroup>
+            <thead>
+              <tr class="tableheader">
+                <th colspan="11" scope="col">2 yd Front Load Pricing - Organic Waste</th>
+              </tr>
+              <tr class="tablelabels">
+                <th scope="col">&nbsp;</th>
+                <th width="8%" scope="col">1 pick up per week</th>
+                <th width="8%" scope="col">2 pick ups per week</th>
+                <th width="8%" scope="col">3 pick ups per week</th>
+                <th width="8%" scope="col">4 pick ups per week</th>
+                <th width="8%" scope="col">5 pick ups per week</th>
+                <th width="8%" scope="col">6 pick ups per week</th>
+                <th width="8%" scope="col">7 pick ups per week</th>
+                <th width="8%" scope="col">On Call</th>
+                <th width="8%" scope="col">Every other week</th>
+                <th scope="col">1 pick up per month</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th width="21%" class="tablelabels2" scope="row" data-section="row-header">A - List Price</th>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <th width="21%" class="tablelabels2" scope="row" data-section="row-header">A - List Price (2nd container)</th>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <th width="21%" class="tablelabels2" scope="row" data-section="row-header">Notes</th>
+                <td colspan="10">&nbsp;</td>
+              </tr>
+            </tbody>
+          </table>
+          <p><a href="#Top">Back to top</a></p>
+        </div>
+<div id="Org-FrontLoad-3yd"><a name="OrgFrontLoad3yd"></a>
+          <table width="100%" border="1" cellpadding="2" cellspacing="2" class="tabletext">
+            <colgroup>
+            <col>
+            </colgroup>
+            <colgroup>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            </colgroup>
+            <thead>
+              <tr class="tableheader">
+                <th colspan="11" scope="col">3 yd Front Load Pricing - Organic Waste</th>
               </tr>
               <tr class="tablelabels">
                 <th scope="col">&nbsp;</th>

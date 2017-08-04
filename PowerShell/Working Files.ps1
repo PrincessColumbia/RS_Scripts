@@ -34,6 +34,7 @@ $workTable | Add-Member -MemberType NoteProperty -Name "DIV_Directory" -Value $n
 $workTable | Add-Member -MemberType NoteProperty -Name "HTML_Destination" -Value $null
 $workTable | Add-Member -MemberType NoteProperty -Name "Built_Destination" -Value $null
 $workTable | Add-Member -MemberType NoteProperty -Name "Excel_Destination" -Value $null
+$workTable | Add-Member -MemberType NoteProperty -Name "Excel_Moved" -Value $null
 $workTable | Add-Member -MemberType NoteProperty -Name "Error" -Value $null
 
 $workTable | ForEach-Object {
@@ -107,6 +108,14 @@ $workTable | ForEach-Object {
         $currentObject.Excel_File = 'N/A'
         $currentObject.HTML_File = 'N/A'
         $currentObject.Excel_Destination = 'N/A'
+    }
+    $testCurrentPath = $divSearchDirectory + '2 - HTML Build\' + $currentObject.Document_Name + '.xlsx'
+    $testResult = $currentObject.Current_Location -eq $testCurrentPath
+    if ( $testResult -eq 'True' ) {
+        $currentObject.Excel_Moved = 'Moved'
+    }
+    if ($currentObject.Type -eq 'PDF') {
+        $currentObject.Excel_Moved = 'PDF, N/A'
     }
 }
 
@@ -226,4 +235,38 @@ Function CopyPDFs {
 Function ChangeToLawsonDirectory ($lawNum) {
     $targetDir = ($workTable | Where-Object { $_.Lawson -eq $lawNum })[0].DIV_Directory
     cd $targetDir
+}
+
+
+Function ListExcelToMove ($lawNum) {
+    $listSet = $workTable | Where-Object { $_.Lawson -eq $lawNum } | Where-Object { $_.Excel_Moved -eq $null } | Select-Object Document_Name | Sort
+    $listSet
+    $listSet.Count
+}
+
+Function PostBuildMoveTest ($lawNum) {
+    $listSet = $workTable | Where-Object { $_.Lawson -eq $lawNum } | Where-Object { $_."Document Built" -eq "Built" }
+    $listSet | ForEach-Object {
+        $currentObject = $_
+        $isFileMoved = Test-Path $currentObject.Excel_Destination
+        if (!$isFileMoved) {
+            $currentObject.Document_Name
+        }
+    }
+}
+
+Function PostBuildMove {
+    $listSet = $workTable | Where-Object { $_."Document Built" -eq "Built" }
+    $listSet | ForEach-Object {
+        $currentObject = $_
+        $isFileMoved = Test-Path $currentObject.Excel_Destination
+        if (!$isFileMoved) {
+            Move-Item $currentObject.Current_Location $currentObject.Excel_Destination
+        }
+    }
+}
+
+Function TestPreBuildMove ($lawNum) {
+    $listSet = $workTable | Where-Object { $_."Document Built" -ne "Built" } | Where-Object { $_.Lawson -eq $lawNum }
+    $listSet | Where-Object { $_.Excel_Moved -eq $null } | Select-Object Document_Name,Current_Location
 }
