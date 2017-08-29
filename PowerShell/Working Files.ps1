@@ -1,7 +1,8 @@
 ﻿$workingFile = $HOME + '\Documents\Personal Build Log Tracker.xlsx'
 $templateFolder = $HOME + '\Scripts\Resources\Doc_Templates\'
 $defaultTemplate = $templateFolder + 'Residential_Contract_or_OM.html'
-$filesLocation = '\\repsharedfs\share\Customer Experience\Compass\CE Analyst Team Files\Site Visit Conversions\'
+#$filesLocation = '\\repsharedfs\share\Customer Experience\Compass\CE Analyst Team Files\Site Visit Conversions\'
+$filesLocation = 'Z:\Site Visit Conversions\'
 $tempFileList = $HOME + '\Scripts\Temp\temp-file-list.csv'
 
 Add-Type -assembly System.IO.Compression.FileSystem
@@ -178,7 +179,7 @@ Function FastExcelOpen {
     }
 }
 
-Function DocumentOpen ($docName) {
+Function BuildOpen ($docName) {
     $currentObject = $workTable | Where-Object { $_.Document_Name -eq $docName }
     $excelTest = $currentObject.Excel_File
     if ( $excelTest -eq "MISSING/MIS-NAMED EXCEL FILE" ) {
@@ -198,7 +199,7 @@ Function DocumentOpen ($docName) {
         if ( $Error[0].Exception.Message.Contains('Cannot validate argument') -eq 'True' ) {
             Write-Host 'Cannot open the HTML file for' $currentObject
         }
-    }d
+    }
 }
 
 Function SeeDetails ($docName) {
@@ -269,4 +270,69 @@ Function PostBuildMove {
 Function TestPreBuildMove ($lawNum) {
     $listSet = $workTable | Where-Object { $_."Document Built" -ne "Built" } | Where-Object { $_.Lawson -eq $lawNum }
     $listSet | Where-Object { $_.Excel_Moved -eq $null } | Select-Object Document_Name,Current_Location
+}
+
+
+<#
+Function BrowserHTMLTest ($lawnum) {
+    $listSet = $workTable | Where-Object { $_."Document Built" -ne "Built" } | Where-Object { $_.Lawson -eq $lawNum }
+    $listSet | Where-Object { $_.Excel_Moved -eq $null } | Select-Object Document_Name,Current_Location
+
+}
+#>
+
+Function ExcelOpen ($docName) {
+    $currentObject = $workTable | Where-Object { $_.Document_Name -eq $docName }
+    $excelTest = $currentObject.Excel_File
+    if ( $excelTest -eq "MISSING/MIS-NAMED EXCEL FILE" ) {
+            Write-Host 'Unable to open Excel file for' $docName
+        } else {
+            $fileToOpen = $currentObject.Excel_File
+            try { start $fileToOpen }
+            catch {
+            if ( $Error[0].Exception.Message.Contains('Cannot validate argument') -eq 'True' ) {
+                Write-Host 'Unable to open Excel file for' $currentObject
+            }
+       }
+    }
+}
+
+Function HTMLOpen ($docName) {
+    $currentObject = $workTable | Where-Object { $_.Document_Name -eq $docName }
+    $fileToOpen = $currentObject.HTML_File
+    try { start $fileToOpen }
+        catch {
+        if ( $Error[0].Exception.Message.Contains('Cannot validate argument') -eq 'True' ) {
+            Write-Host 'Cannot open the HTML file for' $currentObject
+        }
+    }
+}
+
+Function QuickStart ($fileName) {
+    $fullFileName = $fileName + '.xlsx'
+    start $fullFileName
+}
+
+Function BrowserTest {
+    $tempOpen = Import-Csv -Path $tempFileList
+    $tempOpen.Document_Name | ForEach-Object {
+        $currentObject = $_
+        $fileToOpen = $workTable | Where-Object { $_.Document_Name -eq $currentObject } | Select-Object -ExpandProperty "HTML_File"
+        $fixedFilePath = '"' + $fileToOpen + '"'
+        $chromeParams = " `'--profile-directory=`"Default`" --start-maximized " + $fixedFilePath + "`'"
+        try { Start-Process "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" '--profile-directory="Default" --start-maximized $fileToOpen' $fileToOpen }
+        catch {
+            if ( $Error[0].Exception.Message.Contains('Cannot validate argument') -or $Error[0].Exception.Message.Contains('cannot find the file') ) {
+                Write-Host 'Cannot open the HTML file for' $currentObject
+            }
+        }
+    }
+}
+
+Function ExcelPath ($fileName) {
+    $fileList = Get-ChildItem -Recurse | Where-Object { $_.Name -match $fileName }
+    $fileList = $fileList | Where-Object { $_.DirectoryName -notmatch 'Archive' }
+    $result = $fileList | Where-Object { $_.Extension -match '.xlsx' }
+    $result = $result.FullName -replace 'z:','\\repsharedfs\share\Customer Experience\Compass\CE Analyst Team Files'
+    Write-Host 'Excel file:' $result
 }

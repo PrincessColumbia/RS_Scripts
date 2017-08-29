@@ -127,7 +127,7 @@ Function OpenLawsonHTML ($lawsonToOpen) {
 }
 
 
-Function OpenDocument ($docToOpen) {
+Function PROpen ($docToOpen) {
     $openAssignments | Where-Object { $_.Document_Name -eq $docToOpen } | ForEach-Object {
         Start-Process $_.Excel_File
         Start-Process $_.HTML_File
@@ -258,8 +258,12 @@ Function ExportFinishedPeerReview {
 
         # Add the new table item to the table
         $completedAssignments += $compListObject
-    }
+    }see
 
     $destinationPath = $HOME + '\Documents\TempCheckIn.csv'
     $completedAssignments | Export-Csv -NoTypeInformation -Path $destinationPath
+}
+
+Function Seed ($docName) {
+    $openAssignments | Where-Object { $_.Document_Name -eq $docName }
 }
